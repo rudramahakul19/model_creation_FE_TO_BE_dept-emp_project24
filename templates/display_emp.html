@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Table</title>
+</head>
+<body>
+    <center>
+        <h1>display_Emp</h1>
+
+        <table border="3px">
+            <tr style="color: red;">
+                <th>Empno</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>Comm</th>
+                <th>Deptno</th>
+            </tr>
+        {% for EO in data1 %}
+            <tr style="color:teal;">
+                <td>{{EO.empno}}</td>
+                <td>{{EO.ename}}</td>
+                <td>{{EO.job}}</td>
+                <td>{{EO.mgr}}</td>
+                <td>{{EO.hiredate}}</td>
+                <td>{{EO.sal}}</td>
+                <td>{{EO.comm}}</td>
+                <td>{{EO.deptno}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+
+
+</body>
+</html>
